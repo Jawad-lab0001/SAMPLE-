@@ -1,0 +1,10 @@
+student_list = {}
+students = int(input("enter the number of students you want to add : "))
+for x in range(students):
+    student = input("enter the students name :")
+    student_ID = input("Enter the student ID :")
+    Course = input("enter the course :")
+    students = student, student_ID, Course
+    student_list [student] = student_ID,   Course,
+print(student_list) 
+#this is a code to add a student to a dic
