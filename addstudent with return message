@@ -1,0 +1,21 @@
+student_list = {}
+students = int(input("enter your age:"))
+for x in range,{students}:
+    student_name ={
+        input("enter the students name :")
+        }
+    student_ID ={
+        int(input("Enter the student ID :"))
+        }
+    Course = {
+        input("enter the course :")
+        }
+    student_list [students] = student_name, student_ID,   Course,
+    print(student_list)
+    if student_list != student_name != student_ID != Course:
+        print("student Added",  str(student_name))
+    else:
+        print(f"student not added")
+    
+    #print(student_list)
+   # with open("test.txt" , "a") as file:
