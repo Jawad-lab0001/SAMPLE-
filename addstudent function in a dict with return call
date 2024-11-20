@@ -1,0 +1,23 @@
+student_list = {}
+def add_student(students,student_name, student_ID, Course):
+    students = int(input("enter the number of students you want to add:"))
+    for x in range(students):
+       student_name =input("enter the students name :")
+       student_ID =int(input("Enter the student ID :"))
+       Course = input("enter the course :")
+       student_list [students] = {
+          student_name,
+          student_ID,
+          Course 
+          }
+       print((type(student_list)))
+       if student_list != student_name != student_ID != Course:
+           print( "Student has been added:","Student name:", {student_name}, "Student ID:",  {student_ID}, "Course:", {Course})
+       else:
+        print("student not added")
+
+
+add_student("students","student_name", "student_ID", "Course")
+add_student("students","student_name", "student_ID", "Course")
+add_student("students","student_name", "student_ID", "Course")
+add_student("students","student_name", "student_ID", "Course")
