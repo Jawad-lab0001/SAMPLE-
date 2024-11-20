@@ -1,0 +1,8 @@
+def get_student(students):
+    Student_ID = input("enter the students ID to retrive information: ")
+    if Student_ID in students:
+        return students[Student_ID]
+    else:
+        print("Student not found")
+
+get_student("students")
