@@ -1,0 +1,11 @@
+def delete_student(Student):
+    Student_ID = (input("enter the  students ID number: "))
+    if Student_ID in Student:
+        del Student[Student_ID]
+        print(f"the student witht the ID {Student_ID} has been deleted")
+    else:
+        print(f"{Student_ID} error Not found")
+
+
+
+delete_student("Student")
