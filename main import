@@ -1,0 +1,51 @@
+from addstudent import add_student 
+from getstudent import get_student
+
+add_student("students","student_name", "student_ID", "Course")
+get_student()
+
+def get_student(students):
+    Student_ID = input("enter the students ID to retrive information: ")
+    if Student_ID in students:
+        return students[Student_ID]
+    else:
+        print("Student not found")
+
+get_student("students")
+def delete_student(Student):
+    Student_ID = (input("enter the  students ID number: "))
+    if Student_ID in Student:
+        del Student[Student_ID]
+        print(f"the student witht the ID {Student_ID} has been deleted")
+    else:
+        print(f"{Student_ID} Error Student Not found")
+
+
+
+
+
+
+
+
+
+delete_student("Student", "Students")
+student_list = {}
+def add_student(students,student_name, student_ID, Course):
+    students = int(input("enter the number of students you want to add:"))
+    for x in range(students):
+       student_name =input("enter the students name :")
+       student_ID =int(input("Enter the student ID :"))
+       Course = input("enter the course :")
+       student_list [students] = {
+          student_name,
+          student_ID,
+          Course 
+          }
+       print((type(student_list)))
+       if student_list != student_name != student_ID != Course:
+           print( "Student has been added:","Student name:", {student_name}, "Student ID:",  {student_ID}, "Course:", {Course})
+       else:
+        print("student not added")
+
+
+add_student("students","student_name", "student_ID", "Course")
