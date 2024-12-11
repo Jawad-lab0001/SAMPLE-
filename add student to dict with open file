@@ -18,3 +18,26 @@ def addStudent(student_detail):
         print("file was written to student records ")
 addStudent("student_detail")
 print(type(student_List))
+
+# little editted down below
+
+student_List = {}
+def addStudent(student_detail):
+    try:
+        student_name = input("enter the students name: ")    
+        student_number = int(input("enter the students ID: "))
+    except Exception:
+        print("error occured when entered letter for student_number:")
+        return
+    course = input("enter the course name : ")
+    student_detail =(f"Name : {student_name}, student_number : {student_number}, course : {course}")
+    with open("student_record.txt", "a" ) as file:
+        file.write(f"{student_detail}.\n")
+        student_List[student_detail] = {
+            "Student_name": student_name,
+            "student_number" : student_number,
+            "course": course
+        } 
+        print("file was written:")
+addStudent("student_detail")
+print(type(student_List))
